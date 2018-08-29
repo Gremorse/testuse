@@ -21,7 +21,8 @@ import xadmin
 urlpatterns = [
     # 后台模板
     path('admin/', xadmin.site.urls),
-    path('apiauth/', include('rest_framework.urls')),
+    path('runjob/', apiView.run_job, name='runjob'),
+
     # 获取等级金额关系
     # 发布订单
     # 接单

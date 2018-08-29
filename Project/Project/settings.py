@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
+import logging
+import django.utils.log
+import logging.handlers
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import sys
 
@@ -44,6 +48,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'reversion',
     'rest_framework',
+    'snippets',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +149,38 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {  # 格式化
+        'simple': {
+            'format': '[%(asctime)s] %(filename)s %(lineno)d-->%(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'console': {
+            'format': '[%(asctime)s][%(levelname)s] %(pathname)s %(lineno)d -> %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        }
+    },
+    'handlers': {  # 处理器
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'fileHandler': {
+            'level': 'INFO',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'formatter': 'simple',
+            'filename': 'my.log'
+        }
+    },
+    'loggers': {  # 记录器
+        'mylog': {
+            'handlers': ['console', 'fileHandler'],
+            'level': 'INFO',
+            'propagate': False
+        }
+    }
+}
