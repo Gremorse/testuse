@@ -2,6 +2,7 @@ from django.http import JsonResponse, HttpResponseNotAllowed, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from rest_framework import status
+from django.db.utils import IntegrityError
 import logging
 
 logger = logging.getLogger('mylog')
@@ -37,8 +38,15 @@ def getPricelist(request):
     # pass
     if request.method == 'GET':
         logger.info("This is a info  GET log.")
-        from django.db import models
-        models.AppsUser.objects.create(wechat_id=123456, role=1, name="gaojb")
+        from apps.models import AppsUser
+        try:
+            appsUser = AppsUser()
+            appsUser.name = 'gaojb'
+            appsUser.role = 1
+            appsUser.wechat_id = 'Gremorse'
+            appsUser.save()
+        except :
+            print('except:')
 
         # 数据库获取数据
         # 打包JSON
