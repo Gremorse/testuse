@@ -5,6 +5,13 @@
 用户订单交流信息order_chat -- 订单编号，下单人，接单人，发言对象，发言内容，发言时间
 段位价格关系dict_business_payment -- 价格编号，段位起始，段位结束，段位星数，单价
 
+pip install future
+pip install django-crispy-forms
+pip install reversion
+pip install pygments
+pip install django-formtools
+pip install httplib2
+pip install django-import-export
 pip install djangorestframework
 pip install markdown       # Markdown support for the browsable API.
 pip install django-filter  # Filtering support

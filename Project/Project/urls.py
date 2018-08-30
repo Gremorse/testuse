@@ -24,6 +24,7 @@ urlpatterns = [
     path('runjob/', apiView.run_job, name='runjob'),
 
     # 获取等级金额关系
+    path('getPricelist/', apiView.getPricelist, name='getPricelist'),
     # 发布订单
     # 接单
     # 确认订单

@@ -1,4 +1,9 @@
-[2018-08-28 23:21:28] tests.py 22-->This is a info log.
-[2018-08-28 23:21:28] tests.py 23-->This is a warning log.
-[2018-08-28 23:21:28] tests.py 24-->This is a error log.
-[2018-08-28 23:21:28] tests.py 25-->This is a critical log.
+[2018-08-30 19:49:34] tests.py 22-->This is a info log.
+[2018-08-30 19:49:34] tests.py 23-->This is a warning log.
+[2018-08-30 19:49:34] tests.py 24-->This is a error log.
+[2018-08-30 19:49:34] tests.py 25-->This is a critical log.
+[2018-08-30 19:58:03] views.py 37-->This is a info  GET log.
+[2018-08-30 20:01:35] views.py 37-->This is a info  GET log.
+[2018-08-30 20:03:00] views.py 37-->This is a info  GET log.
+[2018-08-30 20:42:10] views.py 39-->This is a info  GET log.
+[2018-08-30 20:44:11] views.py 39-->This is a info  GET log.

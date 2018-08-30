@@ -17,7 +17,7 @@ class NewUserTestCase(TestCase):
         # DATE_FORMAT = "%Y/%d/%m %H:%M:%S %p"
 
         # logging.basicConfig(filename='my.log', level=logging.DEBUG, format=LOG_FORMAT, datefmt=DATE_FORMAT)
-        logger = logging.getLogger('log')
+        logger = logging.getLogger('mylog')
         logger.debug("This is a debug log.")
         logger.info("This is a info log.")
         logger.warning("This is a warning log.")
