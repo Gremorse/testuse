@@ -37,19 +37,23 @@ def getPricelist(request):
     #     return HttpResponse('only support json data', status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
     # pass
     if request.method == 'GET':
-        logger.info("This is a info  GET log.")
         from apps.models import AppsUser
+        from django.db import connection
         try:
             appsUser = AppsUser()
             appsUser.name = 'gaojb'
             appsUser.role = 1
             appsUser.wechat_id = 'Gremorse'
             appsUser.save()
-        except :
-            print('except:')
+            connection.queries
+        except Exception as e:
+            logger.error(e)
 
         # 数据库获取数据
         # 打包JSON
+        appsuser = AppsUser.objects.get(id=1)
+        logger.info(appsuser)
+        connection.queries
         pass
     return HttpResponseNotAllowed(permitted_methods=['GET'])
 

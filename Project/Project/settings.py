@@ -155,7 +155,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {  # 格式化
         'simple': {
-            'format': '[%(asctime)s] %(filename)s %(lineno)d-->%(message)s',
+            'format': '[%(asctime)s][%(levelname)s] %(filename)s %(lineno)d-->%(message)s',
             'datefmt': '%Y-%m-%d %H:%M:%S'
         },
         'console': {

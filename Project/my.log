@@ -1,9 +1,14 @@
-[2018-08-30 19:49:34] tests.py 22-->This is a info log.
-[2018-08-30 19:49:34] tests.py 23-->This is a warning log.
-[2018-08-30 19:49:34] tests.py 24-->This is a error log.
-[2018-08-30 19:49:34] tests.py 25-->This is a critical log.
-[2018-08-30 19:58:03] views.py 37-->This is a info  GET log.
-[2018-08-30 20:01:35] views.py 37-->This is a info  GET log.
-[2018-08-30 20:03:00] views.py 37-->This is a info  GET log.
-[2018-08-30 20:42:10] views.py 39-->This is a info  GET log.
-[2018-08-30 20:44:11] views.py 39-->This is a info  GET log.
+[2018-08-31 10:01:52] views.py 40-->This is a info  GET log.
+[2018-08-31 10:02:53] views.py 40-->This is a info  GET log.
+[2018-08-31 10:02:53] views.py 49-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:05:06][INFO] views.py 40-->This is a info  GET log.
+[2018-08-31 10:05:06][ERROR] views.py 49-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:08:12][ERROR] views.py 48-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:08:12][INFO] views.py 53--><QuerySet [<AppsUser: AppsUser object (1)>]>
+[2018-08-31 10:09:55][ERROR] views.py 48-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:10:09][ERROR] views.py 48-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:10:35][ERROR] views.py 48-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:13:24][ERROR] views.py 50-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:13:24][INFO] views.py 55-->AppsUser object (1)
+[2018-08-31 10:14:17][ERROR] views.py 50-->(1062, "Duplicate entry 'Gremorse' for key 'wechat_id'")
+[2018-08-31 10:14:51][INFO] views.py 55-->AppsUser object (1)
